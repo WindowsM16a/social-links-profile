@@ -1,0 +1,118 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+
+/* Font size (paragraph): 14px (0.875rem) 400,600, 700 weights*/
+body {
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-800);
+    max-width: 28rem;
+    padding: 2.2rem;
+    padding-top: 3rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
+
+    .pfp-text {
+        text-align: center;
+
+        .pfp img {
+            max-width: 3.7rem;
+            border-radius: 2.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .text {
+            .p-location {
+                color: var(--Green);
+                font-size: 0.875rem;
+                margin-bottom: 1.7rem;
+            }
+
+            .p-description {
+                color: var(--White);
+                font-size: 0.875rem;
+            }
+        }
+
+        .text h1 {
+            color: var(--White);
+            font-size: 1.4rem;
+            margin: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+
+    }
+
+    .links {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--White);
+        gap: 1rem;
+
+        .button {
+            color: white;
+            text-decoration: none;
+            background-color: var(--Grey-700);
+            text-align: center;
+            width: 20rem;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+        }
+
+        .button:hover {
+            background-color: var(--Green);
+            color: var(--Grey-800);
+        }
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.3rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
