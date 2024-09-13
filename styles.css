@@ -37,7 +37,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--Grey-800);
-    max-width: 28rem;
+    max-width: 31rem;
     padding: 2.2rem;
     padding-top: 3rem;
     gap: 1rem;
@@ -47,7 +47,7 @@ body {
         text-align: center;
 
         .pfp img {
-            max-width: 3.7rem;
+            max-width: 5rem;
             border-radius: 2.2rem;
             margin-bottom: 0.8rem;
         }
@@ -67,9 +67,9 @@ body {
 
         .text h1 {
             color: var(--White);
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin: 0.5rem;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
         }
 
 
@@ -87,6 +87,7 @@ body {
         .button {
             color: white;
             text-decoration: none;
+            font-weight: 600;
             background-color: var(--Grey-700);
             text-align: center;
             width: 20rem;
